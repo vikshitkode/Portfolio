@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import weather from "../../Assets/Projects/weather.png";
+import dial from "../../Assets/Projects/dial.jpg";
+import movie from "../../Assets/Projects/movie.jpg";
+import superhero from "../../Assets/Projects/superhero.png";
+import gameshare from "../../Assets/Projects/gameshare.png";
 
 function Projects() {
   return (
@@ -23,68 +22,55 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={superhero}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Super Heroes"
+              description="The Super Heroes is a one stop shop website for Super Hero Zealots. We sell Super Hero Merchandise for all age groups. We embedded all the essential CRUDi functions and added animations for a fun user experience. We had achieved a 100% code coverage and we used agile methodology to develop and deployed the product on Microsoft Azure."
+              ghLink="https://github.com/vikshitkode/Team-14-Super-Heroes"
+              demoLink="https://5110superheroes.azurewebsites.net/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={gameshare}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Game Share UX Design"
+              description="Introducing GameShare, the ultimate solution for gamers seeking flexibility without long-term commitment. Our app empowers community members to effortlessly rent and return a wide array of gaming essentials, from games and consoles to accessories and controllers. With user-friendly features like product posting, seamless rental and return processes, and the ability to post their experiences or queries on the community forum, GameShare ensures a streamlined and trustworthy experience."
+              ghLink="https://github.com/vikshitkode/GameShare-UXDesign"
+              demoLink="https://gameshare.my.canva.site/gameshare-website"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={movie}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Movie_plot_LLM"
+              description="Fine-tuned the DistilGPT-2 language model using the Hugging Face Transformers library and PyTorch to generate creative movie plots. Trained the NLP model on a Kaggle dataset in Python 3, ensuring efficient code management. Implemented advanced NLP techniques to construct meaningful sentences and used Streamlit to create an intuitive UI, demonstrating the potential of AI in creative writing and achieving high-quality plot generation."
+              ghLink="https://github.com/vikshitkode/Movie_plot_LLM"
+              demoLink=""              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={weather}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="WeatherWise"
+              description="WeatherWise is a sleek and intuitive weather application built using Flutter, designed to provide real-time weather updates with ease. Powered by a reliable weather API, the app offers accurate and up-to-date information, including current temperature, weather conditions, humidity levels, wind speed, and forecasts for the coming days. The user-friendly interface ensures a seamless experience, with features such as location-based weather tracking, easy-to-read visualizations, and a customizable dashboard. Whether you're planning your day or checking for potential storms, WeatherWise keeps you informed with all the essential weather data at your fingertips."
+              ghLink="https://github.com/vikshitkode/weather_app_flutter"
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={dial}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Dial-a-Ride Problem with Constraint Satisfaction"
+              description="Dial-a-ride problems (DARP) have become a popular topic in logistics in recent years. They are frequently used in transportation, goods distribution, and fast delivery. The DARP is an NP-hard optimization problem in which the objective is to organize transmutations from pickup to delivery locations of geographically dispersed customers. Multiple exact and heuristic approaches have been proposed in the literature to solve the DARP. In this paper, we propose a novel algorithm that combines a variable neighborhood search with constraint propagation to solve this problem. Variable neighborhood search is a metaheuristic that iteratively modifies routes to improve the quality of an incumbent solution. Constraint propagation makes use of techniques like backtracking, forward filtering, consistency enforcement to iteratively restrict the possible routes in the problem. Combining the two approaches, one obtains an algorithm that has good properties in terms of runtime and solution quality."
+              ghLink="https://github.com/vikshitkode/VRP_with_CSP"
             />
           </Col>
         </Row>
